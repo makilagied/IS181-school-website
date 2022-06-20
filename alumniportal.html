@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Twins Sec School. Ordinar Level School that provides proper education for your child, welcome.">
+	  <meta name="keywords" content="School,olevel,education,twins,seconary">
+  	<meta name="author" content="makilagied">
+    <title>TWINS SEC | alumni portal </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="../img/favicon.png">
+  </head>
+  <body>
+    <header >
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">TWINS SECONDARY SCHOOL</span> </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li class="current"><a href="alumni.php">Alumni</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="main">
+    <div class="container">
+      <form  class="form1" action="./php/alumniportal.php" method="post">
+        <h1 class="page-title"> ALUMNI PORTAL registration</h1>
+        <div>
+          <div>
+            <label for="personal">Personal Particular</label>
+            <input type="text" name="fname" placeholder="First Name" id="name" required>
+            <input type="text" name="mname" placeholder="Middle Name" id="name" required>
+            <input type="text" name="sname" placeholder="SurName" id="name" required>
+            <input type="text" name="contact" placeholder="Phone Number" id="phone" required>
+            <input type="email" name="email" placeholder="Email" id="email" required>        
+            <input type="text" name="ocupation" placeholder="Current ocupation" id="ocupation" required>
+            <input type="text" name="address" placeholder="Current Address" id="address" required>
+          </div>
+          <div>
+            <label for="additional">Year of Enrolment</label>
+            <input type="date" name="yoe" id="enrol" required>
+            <label for="hos1">Head Of School</label>
+            <select name="hos1" id="hos" required>
+              <option value="Mr. Deo kingo">Mr. Deo kingo</option>
+              <option value="Miss. Lostus Deen">Miss. Lostus Deen</option>
+              <option value="Mr. Luoga Mamba">Mr. Luoga Mamba</option>
+              <option value="Mr. Nyamlani Humbwe">Mr. Nyamlani Humbwe</option>
+              <option value="Miss. Sufian Aned">Miss. Sufian Aned</option>
+            </select>
+            <br><br>
+          </div>
+          <div>
+            <label for="additional">Year of Graduation</label>
+            <input type="date" name="yog" id="enrol" required>
+            <label for="hos2">Head Of School</label>
+            <select name="hos2" id="hos2" required>
+              <option value="Mr. Deo kingo">Mr. Deo kingo</option>
+              <option value="Miss. Lostus Deen">Miss. Lostus Deen</option>
+              <option value="Mr. Luoga Mamba">Mr. Luoga Mamba</option>
+              <option value="Mr. Nyamlani Humbwe">Mr. Nyamlani Humbwe</option>
+              <option value="Miss. Sufian Aned">Miss. Sufian Aned</option>
+            </select>
+            <br><br>
+            <label for="famous">Famous Teacher</label>
+            <select name="famous" id="famous" required>
+              <option value="Mr. kiki konde">Mr. kiki konde</option>
+              <option value="Miss. Lostus Deen">Miss. Lostus Deen</option>
+              <option value="Mr. Luoga Mamba">Mr. Luoga Mamba</option>
+              <option value="Mr. Nyamlani Humbwe">Mr. Nyamlani Humbwe</option>
+              <option value="Miss. Sufian Aned">Miss. Sufian Aned</option>
+              <option value="Mr. Musa kolo">Mr. Musa kolo</option>
+              <option value="Miss. Asoli nongo">Miss. Asoli nongo</option>
+              <option value="Mr. Mamba Mwamba">Mr. Mamba Mwamba</option>
+              <option value="Mr. Kiungo Lombpo">Mr. Kiungo Lombpo</option>
+              <option value="Miss. Linga Aufe">Miss. Linga Aufe</option>
+            </select>
+          </div>
+          <div>
+            <label for="results">Results Summary</label>
+            <select name="result" id="rslts" required>
+              <option value="Div. One">Div. One</option>
+              <option value="Div. Two">Div. Two</option>
+              <option value="Div. Three">Div. Three</option>
+              <option value="Div. Four">Div. Four</option>
+              <option value="Div. Zero">Div. 0</option>
+            </select>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="pword" placeholder="Creat Password" id="pword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title=" Your Password must contain atleast one uppercase letter,number, a special character and not minimum of 8 characters." >
+            <!-- <input type="password" name="pword" placeholder="Confirm Password" id="pword" required> -->
+        
+        
+          </div>
+          <input type="submit"  value="submit" id="btn">
+        
+        </div>
+      </form>
+  
+    </div>
+  </section>
+ 
+ 
+      
+
+    <footer>
+      <div id="boxes">
+        <div class="container">
+          <div class="box box-links">
+            <h3>Important Links</h3>
+            <ul class="links">
+              <li><a href="nacte.go.tz">NACTE</a></li>
+              <li><a href="tamisemi.go.tz">TAMISEMI</a></li>
+              <li><a href="necta.go.tz">NECTA</a></li>
+              <li><a href="tie.go.tz">TIE</a></li>
+              <li><a href="tcu.go.tz">TCU</a></li>
+            </ul>
+            </div>
+          <div class="box box-links">
+            <h3>Social Medias</h3>
+            <ul  class="links">
+              <li><a href=" ">Facebook</a></li>
+              <li><a href=" ">WhatsApp</a></li>
+              <li><a href=" ">Linkedin</a></li>
+              <li><a href=" ">Twiter</a></li>
+              <li><a href=" ">Instagram</a></li>
+            </ul></div>
+          <div class="box box-links">
+            <h3>Our Partiners and sponsers</h3>
+            <ul  class="links">
+              <li><a href=" ">NBC</a></li>
+              <li><a href=" ">CRDB</a></li>
+              <li><a href=" ">Heritage Schools</a></li>
+              <li><a href=" ">FEZA Schools</a></li>
+              <li><a href=" ">UKAID</a></li>
+            </ul></div>
+        </div>
+      </div>
+    <div><p id="ls">Designed by makilagied, Copyright &copy; 2022</p></div>
+  </footer>
+  </body>
+</html>

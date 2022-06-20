@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Twins Sec School. Ordinar Level School that provides proper education for your child, welcome.">
+	  <meta name="keywords" content="School,olevel,education,twins,seconary">
+  	<meta name="author" content="makilagied">
+    <title>TWINS SEC | staff portal </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="../img/favicon.png">
+  </head>
+  <body>
+    <header >
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">TWINS SECONDARY SCHOOL</span> </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="register.php">Register</a></li>
+            <li><a href="alumni.php">Alumni</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="main">
+      <div class="container">
+        <form  class="form1"  action="./php/staffportal.php"  method="post" >
+          <h1 class="page-title">STAFF PORTAL registration</h1>
+          <div>
+            <div>
+              <label for="personal">Personal Particular</label>
+              <input type="text" name="fname" placeholder="First Name" id="name" required>
+              <input type="text" name="mname" placeholder="Middle Name" id="name" required>
+              <input type="text" name="sname" placeholder="SurName" id="name" required>
+              <input type="text" name="uname" placeholder="Username" id="name" required>
+              <input type="text" name="contact" placeholder="Phone Number" id="phone" required>
+              <input type="email" name="email" placeholder="Email" id="email"> 
+              <label for="yob">Year of Birth</label>   
+              <input type="date" name="dob"  id="date" required>
+              
+            </div>
+            <div>
+              <label for="cv">Upload CV</label>
+              <input type="file" name="cv" id="file" required>
+            </div>
+            <div>
+              <label for="social">Social Medias</label>
+              <input type="text" name="Twiter" placeholder="Twiter Account" id="social">
+              <input type="text" name="Instagram" placeholder="Instagram account" id="social">
+              <input type="text" name="facebook" placeholder="Facebook account" id="social">
+          
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="pword" placeholder="Creat Password" id="pword" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title=" Your Password must contain atleast one uppercase letter,number, a special character and not minimum of 8 characters.">
+              <!-- <input type="password" name="pword" placeholder="Confirm Password" id="pword" required> -->
+          
+          
+            </div>
+            <input type="submit"  value="submit" id="btn">
+          
+          </div>
+        </form>
+    
+      </div>
+    </section>
+   
+ 
+      
+
+    <footer>
+      <div id="boxes">
+        <div class="container">
+          <div class="box box-links">
+            <h3>Important Links</h3>
+            <ul class="links">
+              <li><a href="nacte.go.tz">NACTE</a></li>
+              <li><a href="tamisemi.go.tz">TAMISEMI</a></li>
+              <li><a href="necta.go.tz">NECTA</a></li>
+              <li><a href="tie.go.tz">TIE</a></li>
+              <li><a href="tcu.go.tz">TCU</a></li>
+            </ul>
+            </div>
+          <div class="box box-links">
+            <h3>Social Medias</h3>
+            <ul  class="links">
+              <li><a href=" ">Facebook</a></li>
+              <li><a href=" ">WhatsApp</a></li>
+              <li><a href=" ">Linkedin</a></li>
+              <li><a href=" ">Twiter</a></li>
+              <li><a href=" ">Instagram</a></li>
+            </ul></div>
+          <div class="box box-links">
+            <h3>Our Partiners and sponsers</h3>
+            <ul  class="links">
+              <li><a href=" ">NBC</a></li>
+              <li><a href=" ">CRDB</a></li>
+              <li><a href=" ">Heritage Schools</a></li>
+              <li><a href=" ">FEZA Schools</a></li>
+              <li><a href=" ">UKAID</a></li>
+            </ul></div>
+        </div>
+      </div>
+    <div><p id="ls">Designed by makilagied, Copyright &copy; 2022</p></div>
+  </footer>
+  <script>
+    function ValidateEmail(inputText) {
+      var inputText = document.getElementById('email').value;
+      const emailError = document.getElementById('email-error')
+     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(inputText.match(mailformat)) {
+        emailError.style.display = 'none'
+        return true;
+       }
+       else {
+         emailError.style.display = 'block'
+         onload
+         document.form1.text1.focus();
+         return false; 
+       }
+     }
+        </script>
+  </body>
+</html>
